@@ -1,0 +1,220 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> CV Lucas Cosmao Dumanoir </title>
+        <style type="text/css">
+            *{
+            margin: 0;
+            box-sizing: border-box; /*délimiter les page*/
+            }
+        body{
+            font-family: Roboto; /*police d'écriture*/
+            font-weight: 300; /*épaisseur de la police*/
+            font-size: .9rem; /*taille de la police*/
+            line-height: 1.5; /*espacement entre les lignes*/
+            text-shadow: 4px 4px 4px #aaa; /*effet d'ombre sur le texte*/
+            }
+        a{
+            text-decoration: none; /*pas de particularité  sur le texte du lien*/
+            color: black; /*couleur lien*/
+            }
+        a:hover{
+            text-decoration: underline; /*lien souligné qd on passe dessus*/
+            color: #FF6961; /*lien de couleur qd on passe dessus*/
+            }
+        p{
+            margin: 0 0 1rem; /*espace en dessous des titres*/
+            }
+        h2{
+            margin: 0 0 1rem; /*espace entre les  titres et le texte*/
+            letter-spacing: 1px; /*espace entre les lettres des titres*/
+            text-transform: uppercase; /*titres en majuscules*/
+            }
+        .text-rose{
+            color: #FF6961; /*couleur titre colonne de droite*/
+            }
+        .text-beige{
+            color: #F3F0CD; /*couleur titre colonne de gauche*/
+            }
+        .cv-container{
+            display: grid; /*structure la pages pour les colonnes*/
+            grid-template-columns: 1fr 1fr 1fr; /*divise en 3 parties la page */
+            grid-template-areas: "left-column right-column right-column"; /*la colonne de droite prend la place de deux colonnes gauches*/
+            width: 1200px; /*taille de la structure*/
+            margin: auto; /*marge automatique*/
+            box-shadow: 0 5px 10px; /*effet ombre 3D de la structure*/
+            }
+        .section{
+            margin-bottom: 1.5rem; /*espace entre les différentes sections*/
+            }
+            
+        .left-column{
+            grid-area: left-column; /*renvoie aux mesures définies dans cv-container de left*/
+            padding: 50px; /*positionnement du texte, ici au centre*/
+            background-image: url("https://image.jimcdn.com/app/cms/image/transf/dimension=681x10000:format=png/path/sc8904bdaefd9feda/image/if2608aade8050a46/version/1587643877/la-couleur-peinture-tendance-de-l-année-2019-est-un-rose-orangé-légèrement-doré-a-utiliser-pour-créer-une-ambiance-à-la-fois-délicate-et-amusante.png"); /*fond de la structure de la page*/
+            color: white; /*couleur du texte colonne gauche*/
+            margin-top: 200px; /*marge en haut*/
+            margin-bottom: 0px; /*marge en bas*/
+            }
+        .portait{
+            border-radius: 15%; /*bords arrondis de la photo*/
+            max-width: 250px; /*taille de la photo*/
+            margin: auto; /*marge automatique centrée de la photo*/
+            display: block;
+            margin-bottom: 50px; /*marge par rapport au bas*/
+            }
+        .gif{
+            border-radius: 15%; /*bords arrondis du GIF*/
+            max-width: 400px; /*taille du GIF*/
+            margin: auto; /*marge automatique centrée du GIF*/
+            display: block;
+            margin-bottom: 50px; /*marge par rapport au bas*/
+            }
+        .right-column{
+            grid-area: right-column; /*renvoie aux mesures définies dans cv-container de right*/
+            grid-template-areas: "content"; /*renvoie au centrage défini dans content*/
+            margin-top: 200px; /*marge en haut*/
+            margin-bottom: 0px; /*marge en bas*/
+            background-color: #F3F0CD; /*couleur colonne de gauche*/
+            }
+        .content{
+            grid-area: content;
+            padding: 50px; /*marge automatique*/
+            } 
+        #en-tête{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            height: 200px;
+            padding: 0px;
+            margin-top: 0px;
+            }
+        #pied-de-page{
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            height: 100px;
+            margin-top: 1650px;
+            }
+        </style>
+        <head>
+          <meta charset="utf-8">
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+      </head>
+        <body>
+            <div class="cv-container">
+              <img id="en-tête" src="https://www.laroche-posay.fr/site/pages/showImageResized.aspx?EncMediaId=Smo0MzIrcm1nVWI2SER4MThlbkJHQT09&ImageFormatAppCode=IMAGEFORMAT_ORIGINAL&v=20200529140116&mode=0&ShowCopyRight=False" alt="Banner Image"/>
+              <img id="pied-de-page" src="https://www.laroche-posay.fr/site/pages/showImageResized.aspx?EncMediaId=Smo0MzIrcm1nVWI2SER4MThlbkJHQT09&ImageFormatAppCode=IMAGEFORMAT_ORIGINAL&v=20200529140116&mode=0&ShowCopyRight=False" alt="Banner Image"/>
+              <div class="left-column">
+                <img class="portait" src="https://media-exp1.licdn.com/dms/image/C4E03AQHJGuVt6fMYeA/profile-displayphoto-shrink_400_400/0/1632934220916?e=1655942400&v=beta&t=7KHCuky5Nc2jiPrHIYbxogIHhuhPVw-o5-F_vrCLUKA" />
+                <div class="section">
+                  <h2><span class="text-beige">Lulitouns TÉLÉTUBBIES</span></h2>
+                  <p>
+                    <li> Mail : lucascosmao@yahoo.fr</li><br>
+                    <li>Adresse : Au dessus des collines, au loin..., <br>99999 Villubbies</li><br>
+                    <li>Téléphone : 06 66 66 66 66</li>
+                  </p>
+                </div>
+                <div class="section"><br>
+                  <h2><span class="text-beige">PRÉSENTATION</span></h2>
+                  <p>
+                    Je suis réactif, je sais rapidement m’adapter aux situations et assimiler les consignes données. De plus, je possède de réelles qualités de communication orales ou écrites acquises au cours de mes expériences professionnelles et complétées par mes années de licence de droit. Je suis de nature joviale et sais positiver dans n'importe laquelle des situations, ce que je pense être une force.
+                  </p>
+                </div>
+                <div class="section"><br>
+                  <h2><span class="text-beige">COMPÉTENCES</span></h2>
+                        <li><b>Langues : </b>Anglais niveau C1 et espagnol niveau B2.</li><br>
+                        <li><b>Informatique : </b>Maitrise du pack Microsoft Office (World, Excel, PowerPoint), de la programmation web et du langage C.</li><br>
+                        <li><b>Internet et droit : </b>Base de données juridiques (BOFiP, Dalloz, Lexis Nexis) et maitrise des réseaux sociaux.</li>
+                </div>
+                <div class="section"><br>
+                  <h2><span class="text-beige">CENTRES D'INTÉRÊTS</span></h2>
+                  <p>
+                        <li>Le SoLeiL</li>
+                        <li>L' art</li>
+                        <li>Les actualités</li>
+                        <li>Le piano</li>
+                        <li>La FIESTAAAAAAA</li>
+                        <li>Les sorties culturelles</li>
+                  </p>
+                </div>
+              </div>
+              <div class="right-column">
+                <div class="content">
+                  <div><a href="#Expérience pro">Expériences professionelles</a></div>
+                  <div><a href="#Études/formations">Études & formations</a></div>
+                  <div><a href="#Vie assiociative">Vie associative</a></div></br>
+                  <div class="section">
+                    <h2><div id="Expérience pro"></div><span class="text-rose">Expériences professionelles</span></h2>
+                    <p>
+                      <b>Assistant DPO (Apprenti) chez OMNES EDUCATION</b>
+                            <ul>
+                                <li>Mise à jour du registre de traitement de données OneTrust</li>
+                                <li>Service juridique RGPD</li>
+                                <li>Élaboration des clauses de contrats RGPD</li>
+                                <li>Missions de qualité des processus</li>
+                            </ul> <br>
+                            <b>Accueil standardiste (CDD) chez Agence design packaging Icône Graphic</b>
+                            <ul>
+                                <li>Gestion standard téléphonique</li>
+                                <li>Mise en relation professionnels et clients</li>
+                                <li>Gestion des envoies d’impression (réception et expédition)</li>
+                                <li>Saisie et traitement de données</li>
+                            </ul> <br>
+                            <b>Hôte d’accueil (CDD) au Salon Vivatechnologie Parc des Expositions</b>
+                            <ul>
+                                <li>Accueil des professionnels</li>
+                                <li>Stands d’information</li>
+                                <li>Placement dans les salles de conférences</li>
+                            </ul> <br>
+                            <b>Assistant juridique chez Siège social de l'établissement bancaire BRED</b>
+                            <ul>
+                                <li>Assistance transferts de virements importants à l’international</li>
+                                <li>Contrats clients</li>
+                                <li>Saisie et traitement de données</li>
+                            </ul> <br>
+                           <b> Vendeur (CDD) chez Monoprix </b>
+                            <ul>
+                                <li>Gestion et récéption des livraisons</li>
+                                <li>Rayonnage en magasin</li>
+                                <li>Conseils clients</li>
+                            </ul> <br>
+                            <b>Vendeur (CDD) chez H&M</b>
+                            <ul>
+                                <li>Vendeur conseils</li>
+                                <li>Tenue de la caisse</li>
+                                <li>Gestion cabines d'essayage</li>
+                            </ul>
+                  </div>
+                  <div class="section">
+                    <h2><div id="Études/formations"></div><span class="text-rose">Études & formations</span></h2>
+                    <p>
+                      <ul>
+                        <a href="https://www.la-providence.net/fr/">
+                            <li>2017 : Baccalauréat de Sciences économiques et sociales</li>
+                        </a>
+                        <a href="https://droit.u-pec.fr">
+                            <li>2017 - 2021 : Licence de Droit général</li>
+                        </a>
+                        <a href="https://www.u-pec.fr/fr/formation/master-droit-du-numerique-parcours-informatique-et-droit">
+                            <li>2021 - En cours : Master Droit du numérique, parcours informatique et droit</li>
+                        </a>
+                    </ul>
+                    </p>
+                  </div>
+                  <div class="section">
+                    <h2><div id="Vie assiociative"></div><span class="text-rose">Vie associative</span></h2>
+                    <p>
+                      <b>Septembre 2017 à ce jour :</b> Membre de l’Apprenti juriste. Association étudiante de la faculté de droit de l’Université Paris Est Créteil avec l’organisation d’un système d’entraide entre étudiants afin de lutter contre le taux d’échec en Licence dans le cadre de parrainages, mise en contact entre les praticiens du droit et les étudiants via des conférences.
+                      </br></br><img class="gif" src="https://thumbs.gfycat.com/JubilantWellmadeElver-size_restricted.gif" />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </body>
+  </head>
+</html>
