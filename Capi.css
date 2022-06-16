@@ -7,15 +7,6 @@ body{
     font-weight: 300; /*épaisseur de la police*/
     font-size: .9rem; /*taille de la police*/
     line-height: 1.5; /*espacement entre les lignes*/
-    text-shadow: 4px 4px 4px #aaa; /*effet d'ombre sur le texte*/
-    }
-a{
-    text-decoration: none; /*pas de particularité  sur le texte du lien*/
-    color: black; /*couleur lien*/
-    }
-a:hover{
-    text-decoration: underline; /*lien souligné qd on passe dessus*/
-    color: #FF6961; /*lien de couleur qd on passe dessus*/
     }
 p{
     margin: 0 0 1rem; /*espace en dessous des titres*/
@@ -25,28 +16,26 @@ h2{
     letter-spacing: 1px; /*espace entre les lettres des titres*/
     text-transform: uppercase; /*titres en majuscules*/
     }
-.text-rose{
-    color: #FF6961; /*couleur titre colonne de droite*/
+.text-verdo{
+    color: #0677; /*couleur titre colonne de droite*/
     }
-.text-beige{
-    color: #F3F0CD; /*couleur titre colonne de gauche*/
+.text-glace{
+    color: #D9E9F8; /*couleur titre colonne de gauche*/
     }
 .cv-container{
     display: grid; /*structure la pages pour les colonnes*/
     grid-template-columns: 1fr 1fr 1fr; /*divise en 3 parties la page */
     grid-template-areas: "left-column right-column right-column"; /*la colonne de droite prend la place de deux colonnes gauches*/
-    width: 1200px; /*taille de la structure*/
+    width: 1440px; /*taille de la structure*/
     margin: auto; /*marge automatique*/
-    box-shadow: 0 5px 10px; /*effet ombre 3D de la structure*/
     }
 .section{
     margin-bottom: 1.5rem; /*espace entre les différentes sections*/
     }
-    
 .left-column{
     grid-area: left-column; /*renvoie aux mesures définies dans cv-container de left*/
     padding: 50px; /*positionnement du texte, ici au centre*/
-    background-image: url("https://image.jimcdn.com/app/cms/image/transf/dimension=681x10000:format=png/path/sc8904bdaefd9feda/image/if2608aade8050a46/version/1587643877/la-couleur-peinture-tendance-de-l-année-2019-est-un-rose-orangé-légèrement-doré-a-utiliser-pour-créer-une-ambiance-à-la-fois-délicate-et-amusante.png"); /*fond de la structure de la page*/
+    background-color: #0677; /*couleur colonne de gauche*/
     color: white; /*couleur du texte colonne gauche*/
     margin-top: 200px; /*marge en haut*/
     margin-bottom: 0px; /*marge en bas*/
@@ -58,19 +47,19 @@ h2{
     display: block;
     margin-bottom: 50px; /*marge par rapport au bas*/
     }
-.gif{
-    border-radius: 15%; /*bords arrondis du GIF*/
-    max-width: 400px; /*taille du GIF*/
-    margin: auto; /*marge automatique centrée du GIF*/
+.thème{
+    border-radius: 0%; /*bords arrondis de la photo*/
+    max-width: 250px; /*taille de la photo*/
+    margin: auto; /*marge automatique centrée de la photo*/
     display: block;
-    margin-bottom: 50px; /*marge par rapport au bas*/
+    margin-bottom: 25px; /*marge par rapport au bas*/
     }
 .right-column{
     grid-area: right-column; /*renvoie aux mesures définies dans cv-container de right*/
     grid-template-areas: "content"; /*renvoie au centrage défini dans content*/
     margin-top: 200px; /*marge en haut*/
     margin-bottom: 0px; /*marge en bas*/
-    background-color: #F3F0CD; /*couleur colonne de gauche*/
+    background-color: #D9E9F8; /*couleur colonne de droite*/
     }
 .content{
     grid-area: content;
@@ -91,6 +80,6 @@ h2{
     left: 0px;
     right: 0px;
     width: 100%;
-    height: 100px;
-    margin-top: 1650px;
+    height: 200px;
+    margin-top: 1400px;
     }
